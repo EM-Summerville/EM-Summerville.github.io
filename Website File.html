@@ -158,6 +158,14 @@
   }
   .proj-head h3{margin:0; font-size:1.08rem; font-weight:600;}
   .proj-head .when{font-family:var(--mono); font-size:12.5px; color:var(--paper-dim);}
+  .proj-meta{display:flex; align-items:center;}
+  .proj-meta .when{margin-right:14px;}
+  .repo-link{
+    font-family:var(--mono); font-size:12px; color:var(--verify);
+    text-decoration:none; border-bottom:1px solid transparent;
+    white-space:nowrap;
+  }
+  .repo-link:hover{border-bottom-color:var(--verify);}
   .proj p{margin:0 0 12px; color:var(--paper-dim);}
   .stack{display:flex; flex-wrap:wrap; gap:8px; margin-top:14px;}
   .tag{
@@ -291,7 +299,7 @@
     <div class="sec-head"><span class="num">03</span><h2>Projects</h2></div>
 
     <div class="proj">
-      <div class="proj-head"><h3>Global Water Quality &amp; Healthcare Database</h3><span class="when">APRIL 2025</span></div>
+      <div class="proj-head"><h3>Global Water Quality &amp; Healthcare Database</h3><div class="proj-meta"><span class="when">APRIL 2025</span><a class="repo-link" href="https://github.com/EM-Summerville/Water-Pollution-Database" target="_blank" rel="noopener">View Repo</a></div></div>
       <p>
         Designed a fully normalized PostgreSQL database consolidating 18,000+ global water pollution and healthcare
         access records from multiple raw CSV files. Built automated, trigger-based validation controls that flag
@@ -304,7 +312,7 @@
     </div>
 
     <div class="proj">
-      <div class="proj-head"><h3>U.S. Census Bureau Business Data Analysis</h3><span class="when">APRIL 2025</span></div>
+      <div class="proj-head"><h3>U.S. Census Bureau Business Data Analysis</h3><div class="proj-meta"><span class="when">APRIL 2025</span><a class="repo-link" href="https://github.com/EM-Summerville/CensusDataAnalysis" target="_blank" rel="noopener">View Repo</a></div></div>
       <p>
         Analyzed a subset of the U.S. Census Bureau's Economic Census dataset in a cloud-hosted JupyterHub environment.
         Built a neural network regression model and a decision tree regression model to uncover what drives employee
@@ -313,6 +321,18 @@
       </p>
       <div class="stack">
         <span class="tag">Python</span><span class="tag">scikit-learn</span><span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">Altair</span>
+      </div>
+    </div>
+
+    <div class="proj">
+      <div class="proj-head"><h3>Allegheny County Usage Metrics</h3><div class="proj-meta"><span class="when">CLASS PROJECT</span><a class="repo-link" href="https://github.com/EM-Summerville/AlleghenyCountyUsageMetrics" target="_blank" rel="noopener">View Repo</a></div></div>
+      <p>
+        Built an object-oriented, interactive JavaFX program that analyzes utility usage data and displays results
+        for specified building groups, structured around dedicated classes for building groups, individual usage
+        entries, and the overall utility usage system.
+      </p>
+      <div class="stack">
+        <span class="tag">Java</span><span class="tag">JavaFX</span><span class="tag">OOP</span>
       </div>
     </div>
   </section>
@@ -369,6 +389,7 @@
     <div class="contact-row">
       <a href="mailto:esummerville5@gmail.com">esummerville5@gmail.com</a>
       <a href="https://www.linkedin.com/in/eli-summerville" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/EM-Summerville" target="_blank" rel="noopener">GitHub</a>
       <a href="#" id="resumeLink">Résumé (PDF)</a>
     </div>
     <p class="fine">Cresson, PA — built with a plain HTML file, no framework required.</p>
